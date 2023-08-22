@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #f6f8fc;
+}
+.mainDiv{
+    display: flex;
+}
+.sideNav{
+    position:fixed;
+    width: 50px;
+    /* background-color: #375885; */
+    background-color: #f6f8fc;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.topNav{
+    position:fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 50px;
+    top: 0;
+    left: 50px;
+    background-color: #f6f8fc;
+    z-index: 1;
+}
+
+.topNav .logo{
+    padding-left: 22px;
+    /* height: 100px; */
+}
+
+.searchBox span{
+    padding-left: 10px;
+    border-radius: 30px 0 0 30px;
+    background-color: #eaf1fb;
+    width: auto;
+    margin: auto;
+    height: 52px;
+    padding-left: 25px;
+}
+
+.searchBox svg{
+    width: auto;
+    padding-top: 11px;
+    
+}
+
+.searchBox{
+    min-width: 45%;
+    border-radius: 30px;
+    width: 450px;
+    display: flex;
+    margin-left: 145px;
+}
+.searchBox input{
+    font-size: 16px;
+}
+
+.searchBox #searchBox{
+    width: 100%;
+    padding: 11px;
+    border: none;
+    height: 30px;
+    background-color: #eaf1fb;
+    outline: none;
+
+}
+
+.settingAndAll{
+    position: absolute;
+    /* border: 1px solid #c00c00; */
+    right: 100px;
+    display: flex;
+}
+
+.settingAndAll .status{
+    border: 1px solid #dadce0;
+    border-radius: 100px;
+    width: 110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settingAndAll .status:hover{
+    background-color: #dadce0;
+}
+.status .arrow{
+    margin: auto;
+    padding: 5px;
+    transform: rotate(90deg);
+    color: #5f6368;
+}
+
+.statusDropDown{
+    display: none;
+    position: absolute; 
+    background-color: #fff;
+    height: 155px;
+    width: 192px;
+    top: 54px;
+    left: 0;
+    -webkit-box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
+}
+
+.statusDropDown a{
+    display: block;
+    text-decoration: none;color: #3c4043;
+    margin-top: 20px;
+    padding-left: 21px;
+}
+
+.rghtSupIcons{
+    margin: auto;
+}
+
+.rghtSupIcons{
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.support{
+    background-color: transparent;
+    border: none;
+}
+
+svg{
+    fill: #5f6368;
+    opacity: 1;
+    width: 40px;
+}
+
+.dots-svg svg{
+    width: 26px;
+    
+}
+
+.search-icon{
+    background-color: green;
+    width: 10px;
+}
+
+.profile{
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    top: 7px;
+}
+.gb_h{
+    -webkit-background-size: 32px 32px;
+    background-size: 32px 32px;
+    border: 0;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin: auto;
+}
+.pro{
+    padding-top: 8px;
+}
+
+.icons svg{
+    fill: #5f6368;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.contentDiv{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    margin-left: 75px;
+    /* margin-left: 336px; */
+    margin-right: 34px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.contentDiv .topWhite{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 50px;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 30px 10px 30px;
+}
+
+.icon-collection{
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+}
+
+.icon-collection > div{
+    margin-left: 25px;
+}
+
+
+.vertical-line{
+    border-left: 1px solid rgb(187, 184, 184);
+    height: 22px;
+}
+
+.get_start{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.get_start_grp{
+    border: 1px solid #dadce0;
+    margin-top: 33px;
+    border-radius: 15px;
+    height: 108px;
+    overflow-y: hidden;
+    padding: 10px 20px;
+    width: 97%;
+    transition: 1s;
+}
+
+.get_start_icons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+}
+
+.get_start_icons > div{
+    display: flex;
+    align-items: center;
+}
+
+.mails{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 0 0 15px 15px ;
+}
+
+.mail{
+    padding: 8px;
+    border-bottom: 1px dashed rgb(187, 184, 184);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub{
+    display:flex;
+    width:70%;
+}
+
+.sender{
+    width: 160px;
+}
+
+.mailDesc{
+    color: #5f6368;
+    text-overflow: ellipsis;
+    font-size: 0.875rem;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 74%;
+}
+
+.inMailIcons{
+    width: 140px;
+}
+
+.inMailIcons > img{
+    margin-left:10px;
+}
+
+.mail-right-icons > div {
+    margin-right: 10px;
+  }
+
+  .collap-menu{
+    position: fixed;
+    /* width: 256px; */
+    width: 0;
+    height: 100vh;
+    left: 50px;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sideNav-icons{
+    display: block;
+    margin-top: 26px;
+}
+
+.hamburger{
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    margin-left: 40px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.sideNav-icons > div{
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  .compose-btn{
+    background-color: #c2e7ff;
+    color: #001d35;
+    width: 133px;
+    height:47px;
+    border-radius: 16px;
+    border: none;
+    font-size: .875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+.menu-items{
+    margin-top: 90px;
+    margin-left: 21px;
+}
+
+.menuTexts{
+    width: 77%;
+    border-radius: 100px;
+    margin-top: 15px;
+    padding: 0 16px 0 12px;
+}
+
+.menuTexts > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+    height:27px;
+}
+
+/* login page css */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+  }
+  
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  }
+  
+  .google-logo {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 15px;
+  }
+  
+  .box h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .box p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .box .inputBox {
+    position: relative;
+  }
+  
+  .box .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+    
+  }
+  
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label,
+  .box .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .box .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+  }
+  .box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+  }
+  
+  .box input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+  }            
+  
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label,
+  .box .inputBox input:not([value=""]) ~ label {
+      top: -1.125rem;
+      left: 10px;
+      color: #1a73e8;
+      font-size: 0.75rem;
+      background-color: white;
+      height: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+  .box .inputBox input:focus {
+      outline: none;
+      border: 2px solid #1a73e8;
+  }
+  
+  .forgot {
+    margin-top: -20px;
+  }
+  
+  .forgot button {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+    text-align: left;
+    border: 0;
+  }
+
+  .gmail_icon{
+    width: 5px;
+    height: 2px;
+  }
+  .google-logo svg{
+    width: 90px;
+  }
